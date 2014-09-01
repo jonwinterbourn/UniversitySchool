@@ -1,0 +1,62 @@
+/* RTE STYLES */
+
+/* HEADINGS */
+h1 {
+    color: #006892;
+    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 40px;
+}
+h2 {
+    color: #006892;
+    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 36px;
+}
+h3 {
+    color: #006892;
+    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+h5 {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* BLOCKQUOTES */
+
+
+blockquote {
+    border-left: 5px solid #fff453;
+    margin: 0 0 20px;
+    padding: 0 0 0 15px;
+}
+
+blockquote.pull-right {
+    border-left: 0 none;
+    border-right: 5px solid #fff453;
+    float: right;
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.float-right {
+	display:block;
+	float: right;
+}
+.float-left {
+	display:block;
+	float:left;
+}

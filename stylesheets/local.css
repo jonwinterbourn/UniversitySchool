@@ -1,0 +1,114 @@
+/* LOCAL STYLES */
+
+/* HEADINGS */
+h1 {
+    color: #006892;
+    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 40px;
+}
+h2 {
+    color: #006892;
+    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 36px;
+}
+h3 {
+    color: #006892;
+    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+h5 {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* BLOCKQUOTES */
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+}
+blockquote {
+    border-left: 5px solid #fff453;
+    margin: 0 0 20px;
+    padding: 0 0 0 15px;
+}
+blockquote.pull-right {
+    border-left: 0 none;
+    border-right: 5px solid #fff453;
+    float: right;
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+/* LISTS */
+ul {
+	list-style: disc outside none;
+	padding: 0 0 15px 15px;
+}
+ol {
+	list-style-type: lower-roman;;
+	padding: 0 0 15px 18px;
+}
+ul li, ol li {
+	line-height: 18px;
+    padding-left: 20px;	
+	}
+ul.list_1, ul.list_2, ul.list_3, ul.list_4 {
+    padding-bottom: 15px;
+}
+
+.float-right {
+	display:block;
+	float: right;
+}
+.float-left {
+	display:block;
+	float:left;
+}
+.box-style-2.navy a:hover {
+	background:#006892 ; 
+}
+
+
+/* yellow on feature title (homepage - change to prospectus colour */
+.box-style-2 h3 {
+	color: #ffe86c;
+}
+
+/* reduce padding to default */
+.col-right p {
+    margin: 0 0 15px;
+}
+
+/*reduce font-weight and shadowing on megamenu and features&*/
+.megamenu > li a.drop-down, .megamenu > li a.nodrop-down {
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: none;
+}
+.box-style-2 a {
+	font-weight:400;
+	text-shadow: none;
+}
+		
+/*other stuff*/
+div.box-style-2 a.image-full {
+	min-height:	113px;		
+}
+ul.breadcrumb li {
+	padding-left:0px;			
