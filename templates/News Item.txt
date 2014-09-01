@@ -1,0 +1,51 @@
+@inherits UmbracoTemplatePage
+@{
+    Layout = "umbLayout.cshtml";
+    
+    // If the editor has not explicitly provided the "Page title" property page 
+    // then just show the name of the page otherwise show the provided title
+    var pageTitle = string.IsNullOrWhiteSpace(CurrentPage.Title)
+        ? CurrentPage.Name
+        : CurrentPage.Title;
+}
+
+<div class="container">
+<div class="row">
+	
+	<!--<h1 class="span12">@pageTitle</h1>-->
+	<div class="span12">
+		@{ Html.RenderPartial("umbBread"); }
+	</div>
+		
+	<aside class="span4 ">
+		
+		@if (CurrentPage.HasValue("FeatureText")) {
+			<div class="col-left">
+				@CurrentPage.FeatureText
+			</div>
+		} else {
+			<div class="col-left">
+			 	@{ Html.RenderPartial("umbLatestNewsWidget"); }
+			</div>
+		}
+		<p><img src="@Umbraco.Field("bannerimage", recursive: true)" alt="Banner" class="img-rounded"></p>
+	</aside>
+
+	<!-- Main Content / COL Right -->
+	<section class="span8">
+		<div class="col-right full-article">
+			<h2 class="newsHeadline">@pageTitle</h2>
+				@if (CurrentPage.HasValue("Image")) {
+				<div class="main-img">
+					<img src="@Umbraco.Field("image")" alt="">
+					@if (CurrentPage.HasValue("leadImageText")) {
+						<p class="lead">@Umbraco.Field("leadImageText")</p>
+					}
+				</div>
+			}
+			  @Umbraco.Field("bodyText")
+		</div><!--End col right -->
+	</section>
+	
+</div>
+</div>

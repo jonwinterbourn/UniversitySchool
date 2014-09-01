@@ -1,0 +1,41 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "umbLayout.cshtml";
+    var pageTitle = string.IsNullOrWhiteSpace(CurrentPage.Title)
+        ? CurrentPage.Name
+        : CurrentPage.Title;    
+}
+
+<div class="container">
+<div class="row">
+
+	<h1 class="span12">@pageTitle</h1>
+	<div class="span12">
+		@{ Html.RenderPartial("umbBread"); }
+	</div>
+		
+	<aside class="span4 ">
+		
+		@if (CurrentPage.HasValue("FeatureText")) {
+			<div class="col-left">
+				@CurrentPage.FeatureText
+			</div>
+		}
+		<p><img src="@Umbraco.Field("bannerimage", recursive: true)" alt="Banner" class="img-rounded"></p>
+	</aside>
+
+	<!-- Main Content / COL Right -->
+	<section class="span8">
+		<div class="col-right">
+			@if (CurrentPage.LeadImageShow) {
+				<div class="main-img">
+					<img src="@Umbraco.Field("image")" alt="">
+					<p class="lead">@Umbraco.Field("leadImageText")</p>
+				</div>
+			}
+			  @Umbraco.Field("bodyText")
+		</div><!--End col right -->
+	</section>
+	
+</div>
+</div>

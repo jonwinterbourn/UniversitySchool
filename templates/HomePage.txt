@@ -1,0 +1,32 @@
+@inherits UmbracoTemplatePage
+@{
+    Layout = "umbLayout.cshtml";
+}
+@{ Html.RenderPartial("umbHomepageStarSlider"); }
+@{ Html.RenderPartial("umbNewFeatures"); }
+<!-- Main -->
+<div class="container">
+	<div class="row">
+		@{ Html.RenderPartial("umbHomepageAsideFeatures"); }
+		
+		<section class="span8">
+			<div class="col-right">
+				<h2 class="homepage-title">@Umbraco.Field("title", altFieldAlias: "pageName", casing: RenderFieldCaseType.Upper)</h2>
+        		@Umbraco.Field("introduction")
+        		<hr>
+        		<div class="strip-lessons">
+        		<div class="row">
+        			<div class="span2">
+            			<div class="box-style-one borders"><img src="@Umbraco.Field("aboutimage")" alt=""><h5>@Umbraco.Field("aboutimagetitle", casing: RenderFieldCaseType.Upper)</h5></div>
+            			</div>
+            			<div class="span5">
+            				<h4>@Umbraco.Field("aboutTitle")</h4>
+                			@Umbraco.Field("aboutText")
+						</div>
+        			</div>
+        		</div><!-- End Strip course -->
+			</div>
+		</section>
+	</div>
+</div>	
+<!-- /Main -->
