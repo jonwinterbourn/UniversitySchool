@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>News Overview</Name>
+    <Alias>umbNewsOverview</Alias>
+    <Icon>package.png</Icon>
+    <Thumbnail>folder_media.png</Thumbnail>
+    <Description></Description>
+    <AllowAtRoot>False</AllowAtRoot>
+    <Master>umbMaster</Master>
+    <AllowedTemplates>
+      <Template>umbNewsOverview</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>umbNewsOverview</DefaultTemplate>
+  </Info>
+  <Structure>
+    <DocumentType>umbNewsItem</DocumentType>
+  </Structure>
+  <GenericProperties />
+  <Tabs />
+</DocumentType>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>News Item</Name>
+    <Alias>umbNewsItem</Alias>
+    <Icon>.sprTreeDocPic</Icon>
+    <Thumbnail>docWithImage.png</Thumbnail>
+    <Description></Description>
+    <AllowAtRoot>False</AllowAtRoot>
+    <Master>umbMaster</Master>
+    <AllowedTemplates>
+      <Template>umbNewsItem</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>umbNewsItem</DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>Publish date</Name>
+      <Alias>publishDate</Alias>
+      <Type>b6fb1622-afa5-4bbf-a3cc-d9672a442222</Type>
+      <Definition>e4d66c0f-b935-4200-81f0-025f7256b89a</Definition>
+      <Tab></Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[You can overrule the date shown on the site by changing it here. If you don't set a date explicitly here then the news item's create date will be shown.]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Image</Name>
+      <Alias>image</Alias>
+      <Type>5032a6e6-69e3-491d-bb28-cd31cd11086c</Type>
+      <Definition>84c6b441-31df-4ffe-b67e-67d5bc3ae65a</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Lead Image Text</Name>
+      <Alias>leadImageText</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Subheader</Name>
+      <Alias>subheader</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Content</Name>
+      <Alias>bodyText</Alias>
+      <Type>5e9b75ae-face-41c8-b47e-5f4b0fd82f83</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>17</Id>
+      <Caption>Content</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>

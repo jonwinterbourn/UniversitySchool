@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>Text Page</Name>
+    <Alias>umbTextPage</Alias>
+    <Icon>.sprTreeDoc</Icon>
+    <Thumbnail>doc.png</Thumbnail>
+    <Description></Description>
+    <AllowAtRoot>False</AllowAtRoot>
+    <Master>umbMaster</Master>
+    <AllowedTemplates>
+      <Template>umbTextPage</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>umbTextPage</DefaultTemplate>
+  </Info>
+  <Structure>
+    <DocumentType>umbTextPage</DocumentType>
+  </Structure>
+  <GenericProperties>
+    <GenericProperty>
+      <Name>Featured Page?</Name>
+      <Alias>featuredPage</Alias>
+      <Type>38b352c1-e9f8-4fd8-9324-9a2eab06d97a</Type>
+      <Definition>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[Is this a page that should be featured on the home page?]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Show Latest News</Name>
+      <Alias>showLatestNews</Alias>
+      <Type>38b352c1-e9f8-4fd8-9324-9a2eab06d97a</Type>
+      <Definition>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Definition>
+      <Tab>Features</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Show Twitter Feed</Name>
+      <Alias>showTwitterFeed</Alias>
+      <Type>38b352c1-e9f8-4fd8-9324-9a2eab06d97a</Type>
+      <Definition>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Definition>
+      <Tab>Features</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Show Facebook Posts</Name>
+      <Alias>showFacebookPosts</Alias>
+      <Type>38b352c1-e9f8-4fd8-9324-9a2eab06d97a</Type>
+      <Definition>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Definition>
+      <Tab>Features</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>FeatureText</Name>
+      <Alias>featuretext</Alias>
+      <Type>5e9b75ae-face-41c8-b47e-5f4b0fd82f83</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Features</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[Provide content for Features area by hand - only shows if all checkboxes are false]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Lead Image</Name>
+      <Alias>image</Alias>
+      <Type>5032a6e6-69e3-491d-bb28-cd31cd11086c</Type>
+      <Definition>84c6b441-31df-4ffe-b67e-67d5bc3ae65a</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Lead Image Text</Name>
+      <Alias>leadImageText</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>LeadImageShow</Name>
+      <Alias>leadimageshow</Alias>
+      <Type>38b352c1-e9f8-4fd8-9324-9a2eab06d97a</Type>
+      <Definition>92897bc6-a5f3-4ffe-ae27-f2e7e33dda49</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[Show image at the top of the page content]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Content</Name>
+      <Alias>bodyText</Alias>
+      <Type>5e9b75ae-face-41c8-b47e-5f4b0fd82f83</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Content</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>18</Id>
+      <Caption>Content</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+    <Tab>
+      <Id>20</Id>
+      <Caption>Features</Caption>
+      <SortOrder>1</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>
