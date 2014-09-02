@@ -1,0 +1,35 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	// Set the page breacrumb display text
+	var breadText = string.IsNullOrWhiteSpace(@CurrentPage.menuTitle)
+    ? @CurrentPage.Title
+	: @CurrentPage.menuTitle;
+
+}
+		
+@*
+    This snippet makes a breadcrumb of parents using an unordred html list.
+
+    How it works:
+    - It uses the Ancestors() method to get all parents and then generates links so the visitor get go back
+    - Finally it outputs the name of the current page (without a link)
+*@
+@if (CurrentPage.Ancestors().Any())
+{
+    <ul class="breadcrumb">
+        @* For each page in the ancestors collection which have been ordered by Level (so we start with the highest top node first) *@
+        @foreach (var page in CurrentPage.Ancestors().OrderBy("Level"))
+        {
+			// Set the ancestor breacrumb display text
+			var ancestorText = string.IsNullOrWhiteSpace(@page.menuTitle)
+    		? @page.Title
+			: @page.menuTitle;
+			
+            <li><a href="@page.Url">@ancestorText</a> <span class="divider">/</span></li>
+        }
+
+        @* Display the current page as the last item in the list *@
+        <li class="active">@breadText</li>
+			
+    </ul>
+}

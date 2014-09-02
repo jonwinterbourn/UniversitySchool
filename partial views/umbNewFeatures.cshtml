@@ -1,0 +1,24 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+}
+<!-- Features -->
+<div class="container">
+	<div class="row" id="main-boxes">
+		@foreach (var feature in homePage.Descendants().Where("featuredPage"))
+            {
+				<div class="span4">
+					<!-- Feature -->
+        			<div class="box-style-2 navy">
+            		<a href="@feature.Url" class="image image-full" title="@feature.Name">
+                		<!--<img src="@feature.Image" alt="">-->
+                    	<h3>@feature.Name</h3>
+                    	@Umbraco.Truncate(feature.BodyText, 100)
+                	</a>
+            		</div>
+					<!-- /Feature -->
+        		</div>
+			}
+	</div>
+</div>
+<!-- /Features -->

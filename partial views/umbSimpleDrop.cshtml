@@ -1,0 +1,51 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	
+}
+
+@*
+    Macro to display child pages below the root page of a standard website.
+    Also highlights the current active page/section in the navigation with
+    the css class "current".
+*@
+
+@{
+    @* Get the root of the website *@
+    var root = CurrentPage.AncestorOrSelf(1);
+	
+}
+
+<ul class="megamenu">
+    @foreach (var page in root.Children.Where("Visible"))
+    {
+		@* Set the menu display text *@
+		var menuText = string.IsNullOrWhiteSpace(@page.menuTitle)
+        ? @page.Title
+        : @page.menuTitle;
+		
+        <li class=" @(page.IsAncestorOrSelf(CurrentPage) ? "current drop-normal" : "drop-normal")">
+			@{
+				var pageChildren = page.Children.Where("Visible");
+				if (@pageChildren.Count() > 0) {
+					<a href="javascript:void(0)" class="drop-down">@menuText</a>
+					<div class="drop-down-container normal">
+                   	<ul>
+						<li><a href="@page.Url" title="@menuText home">@menuText home</a></li>
+						@foreach (var pc in pageChildren)
+						{
+							@* Set the child display text *@
+							var childText = string.IsNullOrWhiteSpace(@pc.menuTitle)
+        					? @pc.Title
+        					: @pc.menuTitle;
+							<li><a href="@pc.Url" title="@childText">@childText</a></li>
+						}
+					</ul>
+					</div>
+				}
+				else {
+            		<a class="nodrop-down" href="@page.Url">@menuText</a>
+				}
+			}
+        </li>
+    }
+</ul>
