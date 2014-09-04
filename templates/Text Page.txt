@@ -30,7 +30,9 @@
 			@if (CurrentPage.LeadImageShow) {
 				<div class="main-img">
 					<img src="@Umbraco.Field("image")" alt="">
-					<p class="lead">@Umbraco.Field("leadImageText")</p>
+					@if (CurrentPage.HasValue("LeadImageText")) {
+						<p class="lead">@Umbraco.Field("leadImageText")</p>
+					}
 				</div>
 			}
 			  @Umbraco.Field("bodyText")
