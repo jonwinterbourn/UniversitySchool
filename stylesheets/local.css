@@ -112,3 +112,64 @@ div.box-style-2 a.image-full {
 }
 ul.breadcrumb li {
 	padding-left:0px;			
+}
+
+div.home-about-image {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*background: #eaf9ff;*/
+	background: #000;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;	
+}
+
+.home-about-image img {
+	/*margin: 30px 0 15px 0;*/
+	/*margin: 0 0 0 0;*/
+	margin: 2px;
+	width: 166px;
+}
+
+.home-about-image {
+			
+		}
+		
+/*little red button */
+		
+.button_red_small a {
+	
+	color:#fff;
+	text-decoration:none; 
+	transition: background .5s ease; 
+	-moz-transition: background .5s ease; 
+	-webkit-transition: background .5s ease; 
+	-o-transition: background .5s ease;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:700;
+	border-radius: 3px;
+	font-size:11px;
+}
+.button_red_small a:hover {background:#099ad1;}
+
+
+/* twitter and facebook feeds */
+
+div.follow-bar {
+	margin-bottom:12px;	
+}
+
+div.follow-bar div.twitter,
+div.follow-bar div.fb{
+	float:right;
+	margin-top: 0;
+}
+
+div.follow-bar div.twitter a,
+div.follow-bar div.fb a {
+	padding-left: 36px;
+}
+
+
