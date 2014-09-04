@@ -1,0 +1,16 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+<div class="permalink-header">
+	<div class="follow-bar">
+    	<div class="twitter"><a href="#">Follow on Twitter</a></div>
+		<a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="/UoBSchool" data-user-id="2587653642">
+			<strong class="fullname js-action-profile-name show-popup-with-id">UoB School</strong>
+    		<span>?</span><span class="username js-action-profile-name">&#64;UoBSchool</span>
+		</a>
+	</div>
+</div>
+<div id="twitter_feed"></div>	
+<script>
+	$( document ).ready(function() {
+		fetchTweets("uobschool", 5)
+	});
+</script>
