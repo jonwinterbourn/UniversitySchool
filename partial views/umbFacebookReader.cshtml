@@ -1,5 +1,4 @@
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-
 	
 	<div class="permalink-header">
 	<div class="follow-bar">
@@ -7,10 +6,10 @@
 		<a href="https://www.facebook.com/uobschool?hc_location=timeline">The University of Birmingham School</a>
 	</div>
 </div>
-<div id="facebook_timeline">Facebook timeline goes here...</div>	
+<div id="facebook_timeline"></div>	
 <script>
 	$( document ).ready(function() {
-		//fetchTimeline("uobschool", 5)
+		//fetchTimeline(page/account name, number of posts)
+		fetchTimeline("uobschool", 5);
 	});
 </script>
-	

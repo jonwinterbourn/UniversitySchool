@@ -132,9 +132,9 @@ div.home-about-image {
 	width: 166px;
 }
 
-.home-about-image {
-			
-		}
+.home-about-image h5{
+	padding: 2px 2px 4px 2px;
+}
 		
 /*little red button */
 		
@@ -171,5 +171,93 @@ div.follow-bar div.twitter a,
 div.follow-bar div.fb a {
 	padding-left: 36px;
 }
+
+#twitter_feed,
+#facebook_timeline{
+    min-height: 320px;
+}
+div.post-header {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 5px;
+	padding-bottom: 14px;
+}
+
+div.tweet-item a, div.post-item a {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#twitter_feed div.tweet-text, 
+#facebook_timeline div.post-text {
+	display: inline-block;
+	margin: .5em 0;
+	/*font-size: 0.8em;*/
+	/*padding-right: 2.2em;*/
+	text-align: justify;
+}
+
+div.post-item span.post-title {
+	padding-right: 16px;
+	font-weight: bold;
+}
+
+div.post-item span.post-text, 
+div.post-item span.post-likes {
+	/*padding-right: 16px;*/
+}
+
+div.nameDate h5 {
+	margin: 0px;
+	font-size: 12px;
+    text-transform: none;
+}
+
+span.post-time {
+	color: gray;
+	font-size: 11px;
+}
+
+#twitter_feed ul, 
+#facebook_timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+#twitter_feed ul li,
+#facebook_timeline ul li {
+    padding-left: 0px;
+	background-color: #fff;
+	padding:2px 6px;
+	margin-bottom:6px;
+}
+
+a.profile_image_link {
+	margin-right: 8px;
+	float: left;
+}
+
+div.post-header div.nameDate {
+	padding-top: 8px;	
+}
+
+div.letterboxed-image img.post-image {
+	margin: 0.5em auto;
+	border: 1px solid rgba(0,0,0,.2);
+	-webkit-background-size: auto 100%;
+	-webkit-transform: translatez(0);
+	display: block;
+}
+
+div#facebook_timeline img.loader,
+div#twitter_feed img.loader {
+	display:block;
+	text-align: center;
+	margin: 25px auto 0 auto;
+}
+
+
+
+
+
 
 
