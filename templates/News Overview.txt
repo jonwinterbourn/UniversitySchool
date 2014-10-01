@@ -41,7 +41,9 @@
 				@CurrentPage.FeatureText
 			</div>
 		}
-		<p><img src="@Umbraco.Field("bannerimage", recursive: true)" alt="Banner" class="img-rounded"></p>
+		@if (CurrentPage.HasValue("BannerImage")) {
+			<p><img src="@Umbraco.Field("bannerimage", recursive: true)" alt="Banner" class="img-rounded"></p>
+		}
 	</aside>
 
 	<!-- Main Content / COL Right -->

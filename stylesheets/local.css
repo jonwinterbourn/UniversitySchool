@@ -1,23 +1,45 @@
 /* LOCAL STYLES */
 
+body {
+	background: none;
+	background-color: #f8f8f8;
+}
+
+header {
+	/* padding: 8px; */
+	padding: 16px 0;
+}
+
 /* HEADINGS */
 h1 {
     color: #006892;
-    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    /*
+	font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	*/
+	font-family: Georgia, serif;
     font-size: 38px;
     font-weight: normal;
     line-height: 40px;
 }
 h2 {
     color: #006892;
-    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    /*
+	font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	*/
+	font-family: Georgia, serif;
     font-size: 32px;
     font-weight: normal;
     line-height: 36px;
 }
 h3 {
     color: #006892;
-    font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+    /*
+	font-family: Baskerville,"Palatino Linotype",Palatino,"Century Schoolbook L","Times New Roman",serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	*/
+	font-family: Georgia, serif;
     font-size: 24px;
     line-height: 28px;
 }
@@ -158,18 +180,24 @@ div.home-about-image {
 /* twitter and facebook feeds */
 
 div.follow-bar {
-	margin-bottom:12px;	
+		margin-bottom: 8px;
 }
 
 div.follow-bar div.twitter,
 div.follow-bar div.fb{
 	float:right;
 	margin-top: 0;
+	background: none;
+	width: auto;
+	display: block;
+	height: auto;
 }
 
 div.follow-bar div.twitter a,
 div.follow-bar div.fb a {
+	padding:0px;
 	padding-left: 36px;
+	
 }
 
 #twitter_feed,
@@ -194,6 +222,7 @@ div.tweet-item a, div.post-item a {
 	/*font-size: 0.8em;*/
 	/*padding-right: 2.2em;*/
 	text-align: justify;
+	max-width: 292px;
 }
 
 div.post-item span.post-title {
@@ -256,8 +285,110 @@ div#twitter_feed img.loader {
 }
 
 
+/* top banner */
+
+div#menu-top ul li {
+	padding-left: 0;	
+}
 
 
+div.follow-bar span.twitter-account-text,
+div.follow-bar span.fb-account-text {
+	width: 150px;
+	display: block;
+}
+
+/* simple drop-down menu - over-ride list padding */
+
+ul.megamenu li.drop-normal div.drop-down-container ul li {
+
+    padding-left: 0px;	
+	}
+
+/*twitter & facebook icons*/
+
+div.twitter a img {
+	width: 40px;
+	height: 33px;	
+}
+
+div.fb a img {
+	width: 40px;
+	height: 40px;	
+}
+
+/*set news widget list style*/
+ul#news-archive {
+	list-style:none;
+	padding: 0 0 0 0;
+}
+
+ul#news-archive li {
+	padding-left: 0px;
+	line-height: 20px;
+}
+
+ul.meta{
+	list-style:none;
+	padding: 0 0 0 0;
+}
+
+ul.meta li.timestamp{
+	padding-left: 0px;
+	line-height: 20px;
+}
 
 
+/*form*/
+div.contourPage div.checkboxlist span.checkboxlist label {
+		display: inline-block;
+}
+
+div.contourNavigation {
+	margin-top: 16px;
+}
+
+div#menu-top ul {
+	float:right;
+}
+
+/* sixth form form */
+
+#contour label.fieldLabel, .contour label.fieldLabel {
+    margin-right: 12px;
+}
+
+div.contourPage .contourPageName {
+    font-size: 1.4em !important;
+    line-height: 1em !important;
+}
+
+div.contourField .radio, .checkbox {
+
+    padding-left: 4px;
+}
+
+div.contourField .radio input[type="radio"], .checkbox input[type="checkbox"] {
+
+    margin-left: 0px;
+}
+
+div.contourPage {
+	border: 1px;
+	border-style: solid;
+	padding: 8px;
+	
+}
+
+.contour fieldset.contourFieldSet div.qualifications label.fieldLabel {
+	display:none;
+}
+
+.contour fieldset.contourFieldSet div.qualifications div textarea {
+	width: 513px!important;	
+	}
+h4.contourPageName {
+	display:none
+		
+}
 

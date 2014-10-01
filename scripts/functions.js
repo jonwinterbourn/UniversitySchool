@@ -62,7 +62,8 @@ function timeAgo(created, source) {
                 var created_new = created.replace(/-/g, '/').replace('T', ' ').replace('+0000','');
                 date_str = new Date(created_new);
             } else {
-                
+                var created_new = created.replace(/-/g, '/').replace('T', ' ').replace('+0000','');
+                date_str = new Date(created_new);
             }
     		
     		var date_tweet = new Date(date_str);
@@ -118,7 +119,7 @@ function showTweets(data, noOfTweets) {
 }
 function fetchTweets(twitterAcc, noOfTweets) {
 	
-	var url = "http://www.butler.bham.ac.uk/twitter-api/index.php?screenname=" + twitterAcc;
+	var url = "http://www.alfred.bham.ac.uk/twitter-api/index.php?screenname=" + twitterAcc;
 	
 	$.ajax({
             type: "GET",
@@ -126,7 +127,7 @@ function fetchTweets(twitterAcc, noOfTweets) {
             /*cache: false,*/
             dataType:'jsonp',
 			beforeSend: function() {
-    			$('#twitter_feed').html("<img class='loader' src='/media/1167/loader2.gif' />");
+    			$('#twitter_feed').html("<img class='loader' src='/media/1172/loader2.gif' />");
   			},
             success: function(data){
                 showTweets(data, noOfTweets);
@@ -197,13 +198,13 @@ function showPosts(data, noOfPosts) {
 	document.getElementById('facebook_timeline').innerHTML = html.join('');
 }
 function fetchTimeline(facebookAcc, noOfPosts) {
-	var fb_url = "http://www.friendface.butler.bham.ac.uk/feed.json?fb_user=" + facebookAcc;
+	var fb_url = "http://www.friendface.alfred.bham.ac.uk/facebook/feed.json?fb_user=" + facebookAcc;
 	$.ajax({
             type: "GET",
             url: fb_url,
             /*dataType:'jsonp',*/
             beforeSend: function() {
-    			$('#facebook_timeline').html("<img class='loader' src='/media/1167/loader2.gif' />");
+    			$('#facebook_timeline').html("<img class='loader' src='/media/1172/loader2.gif' />");
   			},
 			success: function(data){
                 showPosts(data, noOfPosts);

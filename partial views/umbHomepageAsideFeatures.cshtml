@@ -1,7 +1,7 @@
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 <aside  class="span4 ">
 	
-    		<div class="box-style-1 ribbon borders">
+    		<div class="box-style-1 borders">
 				
 			<div class="feat">
               @{ Html.RenderPartial("umbTwitterReader"); }
@@ -30,5 +30,9 @@
             -->
 				
             </div>
-			<p><img src="@Umbraco.Field("bannerimage")" alt="Banner" class="img-rounded"></p>
+				
+			@if (CurrentPage.HasValue("BannerImage")) {
+				<p><img src="@Umbraco.Field("bannerimage")" alt="Banner" class="img-rounded"></p>
+			}
+			
 		</aside>

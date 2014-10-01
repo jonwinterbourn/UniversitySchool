@@ -1,0 +1,22 @@
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	<h2>Search Results</h2>
+@if (!string.IsNullOrEmpty(Request.QueryString["s"]))    
+{
+	<p class="searchQuerystring">For query: <em>@Request.QueryString["s"]</em>:</p> 
+    <ol class="searchResults">
+        @foreach (var result in Umbraco.TypedSearch(Request.QueryString["s"]))
+        {
+            <li class="@result.Name">
+                
+				@{	
+					var pageTitle = string.IsNullOrWhiteSpace((string)result.GetPropertyValue("title"))
+    			    ? result.Name
+					: result.GetPropertyValue("title"); 
+				}
+				<a href="@result.Url">@pageTitle</a><br/>
+				@result.Url
+		
+            </li>
+        }
+    </ol>
+} 
